@@ -1,7 +1,7 @@
 
 const booksForm = document.querySelector('#book-form');
 const booksTable = document.querySelector('#books-container');
-const booksApiUrl = 'https://bookstore-api-six.vercel.app/api/books';
+const booksApiUrl = 'https://bookstore-api-six.vercel.app/api/books?amount=7';
 
 // alert sucess and error message functions
 const SuccessMessage = (message) => {

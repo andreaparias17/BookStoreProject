@@ -10,18 +10,21 @@
 
 </head>
 <body>
+  <div class="bookshelf-wrapper">
+    <img src="assets/bookshelf.png" class="bookshelf-img"/>
 
-  <div class="container">
-    <h1>📚 My Book Store</h1>
+    <div class="container">
+      <h1>My Book Store</h1>
 
-    <form id="book-form">
-      <input type="text" id="title" placeholder="Book Title"  />
-      <input type="text" id="author" placeholder="Author Name" />
-      <input type="text" id="publisher" placeholder="Publisher" />
-      <button type="submit">Add Book</button>
-    </form>
+      <form id="book-form">
+        <input type="text" id="title" placeholder="Book Title"  />
+        <input type="text" id="author" placeholder="Author Name" />
+        <input type="text" id="publisher" placeholder="Publisher" />
+        <button type="submit">Add Book</button>
+      </form>
 
-    <div id="books-container"></div>
+      <div id="books-container"></div>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
