@@ -3,7 +3,7 @@ const booksForm = document.querySelector('#book-form');
 const booksTable = document.querySelector('#books-container');
 const booksApiUrl = 'https://bookstore-api-six.vercel.app/api/books';
 
-// alert sucess and error message styling
+// alert sucess and error message functions
 const SuccessMessage = (message) => {
   Swal.fire({
     icon: 'success',
@@ -45,7 +45,7 @@ const getBooks = async () => {
 const addBookToTable = (book) => {
   const bookRow = document.createElement('section');
   bookRow.className = 'book-card';
-  bookRow.setAttribute('data-id', book.id); // store the ID
+  bookRow.setAttribute('data-id', book.id); 
 
   bookRow.innerHTML = `
     <section class="book-title">${book.title}</section>
@@ -91,7 +91,7 @@ booksTable.addEventListener('click', async (event) => {
     try {
       await fetch(`${booksApiUrl}/${id}`, { method: 'DELETE' });
       bookRow.remove();
-      // No alert shown on delete
+      // no alert for deletes added 
     } catch (err) {
       console.error('Error deleting book:', err);
       ErrorMessage('Error deleting book.');
@@ -99,5 +99,5 @@ booksTable.addEventListener('click', async (event) => {
   }
 });
 
-// Load books on page load
+
 getBooks();
