@@ -1,4 +1,4 @@
-# My Book Store 📚
+# My Book Store
 
 A web-based application that allows users to add, view, and delete books using form inputs and a remote API. This project was created to demonstrate DOM manipulation, form handling, and async JavaScript using `fetch()`.
 
@@ -80,7 +80,7 @@ addBookToTable({
 
 You can deploy this app using:
 
-### ✅ GitHub Pages
+### GitHub Pages
 
 1. Push code to GitHub repo.
 2. Go to Settings → Pages.
