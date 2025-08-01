@@ -1,7 +1,7 @@
 
 const booksForm = document.querySelector('#book-form');
 const booksTable = document.querySelector('#books-container');
-const booksApiUrl = 'https://bookstore-api-six.vercel.app/api/books?amount=7';
+const booksApiUrl = 'https://bookstore-api-six.vercel.app/api/books?amount=5';
 
 // alert sucess and error message functions
 const SuccessMessage = (message) => {
@@ -91,7 +91,7 @@ booksTable.addEventListener('click', async (event) => {
     try {
       await fetch(`${booksApiUrl}/${id}`, { method: 'DELETE' });
       bookRow.remove();
-      // no alert for deletes added 
+      
     } catch (err) {
       console.error('Error deleting book:', err);
       ErrorMessage('Error deleting book.');
