@@ -43,25 +43,35 @@ form {
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 form input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
+
 form button {
-  padding: 10px;
-  background-color: #0b4e07;
+  width: 180px; /* or 180px — tweak as you like */
+  align-self: center; /* centers it inside the flexbox */
+  background-color: #4b991e;
   color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
-  background-color: #5bc61d;
+  background-color: #0b4e07;
 }
 
 #books-container {
@@ -73,7 +83,7 @@ form button:hover {
   background-color: #f0f0f0;
   padding: 15px;
   margin-bottom: 10px;
-  border-left: 5px solid #b42f18;
+  border-left: 5px solid #3192ED;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,11 +96,11 @@ form button:hover {
 
 .book-card p {
   margin: 4px 0 0 0;
-  color: #da0606;
+  color: #3192ED;
 }
 
 .delete-button {
-  background-color: #1a12ac;
+  background-color: #CF3030;
   color: white;
   padding: 6px 10px;
   border: none;
@@ -99,5 +109,5 @@ form button:hover {
 }
 
 .delete-button:hover {
-  background-color: #060ae7;
+  background-color: #830b1f;
 }
